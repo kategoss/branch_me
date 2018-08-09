@@ -1,19 +1,21 @@
 $(document).ready(function() {
+  $("form#insurance").submit(function(event) {
+    var age = parseInt($("input#age").val());
+    var gender = $("select#gender").val();
 
-  $("#formOne").click(function(event) {
-  var animalInput = $("input:radio[name=animal]:checked").val();
+    var quote = (100 - age) * 3;
+    if (gender === 'male' && age < 26) {
+      quote += 50;
+    }
+    else if (gender === 'female' || age === 26) {
+      quote = 12
+    } else {
+      alert("Please enter an age!").hide("#quote");
+    }
 
-if(animalInput === "turtles") {
-  $("#turtles").toggle();
-  $("#turtles").siblings().hide();
-} else if (animalInput === "snakes") {
-  $("#snakes").toggle();
-  $("#snakes").siblings().hide();
-} else if (animalInput === "monkeys") {
-  $("#monkeys").toggle();
-  $("#monkeys").siblings().hide();
-}
+    $("#rate").text(quote);
+    $("#quote").show()
 
-  event.preventDefault();
+    event.preventDefault();
   });
 });

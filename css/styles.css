@@ -1,15 +1,7 @@
-#turtles {
-  display: none;
+.btn {
+  display: block;
 }
 
-#snakes {
+#quote {
   display: none;
-}
-
-#monkeys {
-  display: none;
-}
-
-img {
-  width: 300px;
 }
