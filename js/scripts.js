@@ -7,7 +7,7 @@ $(document).ready(function() {
     if (gender === 'male' && age < 26) {
       quote += 50;
     }
-    else if (gender === 'female' || age === 26) {
+    else if (gender === 'female' && age > 1 && age < 100 || age === 26) {
       quote = 12
     } else {
       alert("Please enter an age!").hide("#quote");
