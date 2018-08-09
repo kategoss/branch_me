@@ -1,25 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Voting Page</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div id="of_age">
-        <h2>Time to Vote!</h2>
-        <p>If you want to vote, check out the voting registration site <a href="https://sos.oregon.gov/voting/Pages/registration.aspx">here</a>.</p>
-        <p>To find your nearest polling location, see <a href="https://sos.oregon.gov/voting/pages/drop-box-locator.aspx">here</a>.</p>
-        <p>Check out the upcoming elections, <a href="https://multco.us/elections/current-and-upcoming-elections">here</a>.</p>
+<head>
+  <meta charset="utf-8">
+  <title>Animal Wiki</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div id="formOne">
+      <label>Which animal would you like to learn about?</label>
+      <div class="radio">
+        <label>
+          <input type="radio" name="animal" value="turtles">
+          Turtles
+        </label>
       </div>
-      <div id="not_of_age">
-        <h2>Sorry, next time!</h2>
-        <p>If you want to vote in the next election, check out the rules <a href="http://www.ncsl.org/research/elections-and-campaigns/primaries-voting-age.aspx">here</a>.</p>
+      <div class="radio">
+        <label>
+          <input type="radio" name="animal" value="snakes">
+          Snakes
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="animal" value="monkeys">
+          Monkeys
+        </label>
       </div>
     </div>
-  </body>
+    <div id="animalfacts">
+      <div id="turtles">
+        <h4>Here's everything you need to know about turtles:</h4>
+        <img src="https://cf.ltkcdn.net/small-pets/images/std/215635-672x450-Little-turtle.jpg">
+      </div>
+      <div id="snakes">
+        <h4>Here's everything you need to know about snakes:</h4>
+        <img src="http://www.tropicalherping.com/science/books/reptiles/thumbnails/chironius_flavopictus_s.jpg">
+      </div>
+      <div id="monkeys">
+        <h4>Here's everything you need to know about monkeys:</h4>
+        <img src="https://assets3.thrillist.com/v1/image/2539122/size/tmg-article_tall;jpeg_quality=20.jpg">
+      </div>
+    </div>
+  </div>
+</body>
 </html>

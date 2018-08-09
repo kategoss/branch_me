@@ -1,3 +1,7 @@
-#of_age, #not_of_age {
+#animalfacts {
   display: none;
+}
+
+img {
+  width: 300px;
 }
